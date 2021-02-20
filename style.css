@@ -19,6 +19,7 @@ body {
     width: 150px;
     position: relative;
     /* margin-left: 10%; */
+    clip-path: polygon(0% 100%, 100% 100%, 100% 79%, 91% 74%, 87% 71%, 83% 69%, 79% 66%, 77% 60%, 74% 57%, 69% 54%, 69% 51%, 71% 51%, 75% 48%, 76.6% 43%, 77% 39%, 77% 38%, 76% 36%, 74% 34%, 73% 27%, 65% 20%, 64% 19%, 62% 18%, 58% 17%, 55% 16%, 50% 15.8%, 46% 16.8%, 41% 18%, 37% 21%, 34% 24%, 31% 27%, 31% 32%, 30% 35%, 29% 35%, 26% 37%, 24% 40%, 24% 42%, 24% 46%, 25% 49%, 27% 52%, 31% 53%, 33% 55%, 28% 56%, 26% 60%, 23% 64%, 19% 65%, 15% 67%, 11% 68%, 7% 68%, 4% 69%, 1% 72%, 0% 73%);
 }
 header {
     display: flex;
@@ -41,7 +42,7 @@ header ul li {
     padding: 15px 20px;
 }
 header ul li a {
-    color: aliceblue;
+    color: rgb(14, 99, 133);
     padding: 15px auto;
 }
 /* content section */
@@ -85,7 +86,9 @@ header ul li a {
    width: 90.2%;
    height: 350px;
 }
+.work nav a {
 
+}
 .work .work-pictures a img {
     width: 45%;
     height: 250px;
