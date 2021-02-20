@@ -4,35 +4,25 @@
     box-sizing: border-box;
 }
 .hero {
-    display: inline-block;
+    display: flex;
     width: 100%;
     margin: 0 auto;
     background-image: url(./images/florida\ coast.jpeg);
     background-size: cover;
-    background-position-y: 85%;
+    background-position-y: 135%;
     background-attachment: fixed;
-    
-   
-    
 }
 .selfie {
     width: 150px;
-    height: 150px;
-    float: right;
     position: relative;
-    margin-left: -100%;
-}
-.banner {
-    z-index: -1;
-    background-size: cover;
-    width: 100%;
+    /* margin-left: 10%; */
 }
 header {
     display: flex;
     justify-content: space-between;
     background-image: url(./images/florida\ coast.jpeg);
     background-size: cover;
-    background-position-y: 85%;
+    background-position-y: 135%;
     background-attachment: fixed;
     /* width: 100%; */
     
@@ -51,22 +41,51 @@ header ul li a {
     color: aliceblue;
     padding: 15px auto;
 }
+/* content section */
 .content-info {
     display: flex;
     flex-wrap:wrap ;
     justify-content: space-between;
     padding: 50px 0;
 }
-.content-info h2 {
-    flex:2 20%;
+.content-info h2{
+    flex: 20%;
     text-align: right;
     padding-right: 50px;
     border-right: 3px solid;
 }
-.content-info p {
-    flex:1 80%;
+.content-info p{
+    flex:80%;
     flex-wrap: wrap;
     padding-left: 25px;
 }
 
 /* work section */
+.work {
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.work h2{
+    flex: 20%;
+    text-align: right;
+    padding-right: 50px;
+    border-right: 3px solid;
+}
+.work .work-pictures {
+    flex:80%;
+    flex-wrap: wrap;
+    padding-left: 25px;
+}
+.work .work-pictures .best-work {
+   width: 90.2%;
+   height: 350px;
+}
+
+.work .work-pictures a img {
+    width: 45%;
+    height: 250px;
+    padding: 10px;
+}
+
