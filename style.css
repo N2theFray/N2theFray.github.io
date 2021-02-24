@@ -102,11 +102,11 @@ header ul li a {
 }
 .work-pictures h3 {
     /* pushes element to bottom of flex item */
-    margin-top: 175px;
+    margin-top: 308px;
     width: 175px;
     background-color: #a8adba;
     color: #393b4f;
-    text-align: center;
+    text-align: left;
     position: absolute;
   }
   
