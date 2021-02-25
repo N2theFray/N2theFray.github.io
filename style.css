@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root {
-    --navy: rgb(8, 8, 71);
+    --navy: rgb(2,0,36);
     --khaki: rgb(187, 182, 158);
   }
 body {
@@ -15,8 +15,9 @@ body {
     display: flex;
     width: 100%;
     margin: 0 auto;
-    background-color: var(--navy);
     height: 200px;
+    background: var(--navy);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgba(37,32,138,1) 61%, rgba(0,212,255,1) 100%);
 }
 .hero-geometric {
     width: 100%;
@@ -37,7 +38,10 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--navy)
+    background: var(--navy);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgba(37,32,138,1) 61%, rgba(0,212,255,1) 100%);
+    border-bottom: none;
+    flex-wrap: wrap;
 }
 header ul {
     display: flex;
@@ -75,12 +79,14 @@ header h1 {
     flex: 20%;
     text-align: right;
     padding-right: 50px;
-    border-right: 3px solid;
+    border-right: 3px solid var(--navy);
+    color: var(--navy);
 }
 .content-info p{
     flex:80%;
     flex-wrap: wrap;
     padding-left: 25px;
+    color: var(--navy);
 }
 /* about me section */
 
@@ -142,7 +148,7 @@ header h1 {
     flex: 20%;
     text-align: right;
     padding-right: 50px;
-    border-right: 3px solid;
+    border-right: 3px solid var(--khaki);
     color: var(--khaki);
 }
 .contact nav {
@@ -167,3 +173,82 @@ header h1 {
 }
 
 /* End of contact me section */
+
+/* ------------------------ media query -----------------------------*/
+
+/* below 768px */
+@media screen and (max-width: 768px){
+    .hero {
+        justify-content: center;
+    }
+    .content-info h2, .work h2, .contact h2 {
+        text-align: center;
+        padding: 0;
+        padding-bottom: 10px;
+        border-right: none;
+        border-bottom: 3px solid;
+        width: 75%;
+        flex: none;
+        margin: 0 auto;
+
+    }
+    .work-pictures {
+        padding: 0;
+    }
+    .content-info p {
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+}
+/* below 575px */
+@media screen and (max-width: 575px){
+    * {
+        box-sizing: unset;
+    }
+    .hero {
+        justify-content: center;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 38px
+    }
+    header nav {
+        width: 100%;
+    }
+    header ul li a {
+        font-size: 21px;
+    }
+    header nav ul li {
+        flex: 45%;
+        text-align: center;
+    }
+    .selfie {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content-info h2, .work h2, .contact h2 {
+        text-align: center;
+        padding: 0;
+        padding-bottom: 10px;
+        border-right: none;
+        border-bottom: 3px solid;
+        width: 75%;
+        flex: none;
+        margin: 0 auto;
+
+    }
+    .content-info p {
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+    .best-work, .additional-work {
+        width: auto;
+        padding: 7.5px 15px;
+    }
+    .work-pictures {
+        padding: 0;
+    }
+}
