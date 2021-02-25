@@ -3,33 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --navy: rgb(8, 8, 71);
+    --khaki: rgb(187, 182, 158);
+  }
 body {
-    background-color: rgb(222, 252, 252);
+    background-color: var(--khaki);
 }
+/* hero */
 .hero {
     display: flex;
     width: 100%;
     margin: 0 auto;
-    background-image: url(./images/florida\ coast.jpeg);
-    background-size: cover;
-    background-position-y: 135%;
-    background-attachment: fixed;
+    background-color: var(--navy);
+    height: 200px;
 }
+.hero-geometric {
+    width: 100%;
+    height: 15px;
+    background-color: var(--khaki);
+    margin: 75px 0 0 0;
+}
+
 .selfie {
     width: 150px;
-    position: relative;
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 79%, 91% 74%, 87% 71%, 83% 69%, 79% 66%, 77% 60%, 74% 57%, 69% 54%, 70% 51%, 72% 51%, 75% 48%, 76.6% 44%, 77% 40%, 77% 38%, 76% 36%, 75% 35%,74% 34%, 71% 26%, 65% 20%, 64% 19%, 64% 19%, 62% 18%, 58% 17%, 55% 16%, 50% 15.8%, 46% 16.8%, 41% 18%, 37% 21%, 34% 24%, 31% 27%, 31% 32%, 30% 35%, 29% 35%, 26% 37%, 24% 40%, 24% 42%, 24% 46%, 25% 49%, 27% 52%, 31% 53%, 33% 55%, 28% 56%, 26% 60%, 23% 64%, 19% 65%, 15% 67%, 11% 68%, 7% 68%, 4% 69%, 1% 72%, 0% 73%);
+    margin: 0 0 0 20px;
+    position: absolute;
     /* margin-left: 10%; */
     clip-path: polygon(0% 100%, 100% 100%, 100% 79%, 91% 74%, 87% 71%, 83% 69%, 79% 66%, 77% 60%, 74% 57%, 69% 54%, 70% 51%, 72% 51%, 75% 48%, 76.6% 44%, 77% 40%, 77% 38%, 76% 36%, 75% 35%,74% 34%, 71% 26%, 65% 20%, 64% 19%, 64% 19%, 62% 18%, 58% 17%, 55% 16%, 50% 15.8%, 46% 16.8%, 41% 18%, 37% 21%, 34% 24%, 31% 27%, 31% 32%, 30% 35%, 29% 35%, 26% 37%, 24% 40%, 24% 42%, 24% 46%, 25% 49%, 27% 52%, 31% 53%, 33% 55%, 28% 56%, 26% 60%, 23% 64%, 19% 65%, 15% 67%, 11% 68%, 7% 68%, 4% 69%, 1% 72%, 0% 73%);
 }
-
+/* end of hero */
 header {
     display: flex;
     justify-content: space-between;
-    background-image: url(./images/florida\ coast.jpeg);
-    background-size: cover;
-    background-position-y: 135%;
-    background-attachment: fixed;
-    /* width: 100%; */
+    background-color: var(--navy)
 }
 header ul {
     display: flex;
@@ -39,11 +47,20 @@ header ul {
 }
 header ul li {
     padding: 15px 20px;
+    margin: 5px 5px 0 0 ;
 }
 header ul li a {
     color: rgb(14, 99, 133);
     padding: 15px auto;
+    color: var(--khaki);
+    border-bottom: none;
+    text-decoration: none;
 }
+header h1 {
+    color: var(--khaki);
+    margin: 10px 0 0 20px ;
+}
+
 /* ----------------------content section ----------------------*/
 
 /* about me section */
@@ -104,10 +121,11 @@ header ul li a {
     /* pushes element to bottom of flex item */
     margin-top: 308px;
     width: 175px;
-    background-color: #a8adba;
-    color: #393b4f;
+    background-color: var(--navy);
+    color: var(--khaki);
     text-align: left;
     position: absolute;
+    padding-left: 10px;
   }
   
 
@@ -118,14 +136,14 @@ header ul li a {
     flex-wrap:wrap ;
     justify-content: space-between;
     padding: 50px 0;
-    flex-direction: row;
-    /* align-items: center; */
+    background-color: var(--navy);
 }
 .contact h2 {
     flex: 20%;
     text-align: right;
     padding-right: 50px;
     border-right: 3px solid;
+    color: var(--khaki);
 }
 .contact nav {
     flex:80%;
@@ -141,7 +159,11 @@ header ul li a {
     justify-content: space-evenly;
 }
 .contact ul li {
-    padding: 15px 20px; */
+    padding: 15px 20px; 
+}
+.contact ul li a {
+    color: var(--khaki);
+    text-decoration: none;
 }
 
 /* End of contact me section */
