@@ -6,6 +6,7 @@
 :root {
     --navy: rgb(2,0,36);
     --khaki: rgb(187, 182, 158);
+
   }
 body {
     background-color: var(--khaki);
@@ -16,8 +17,6 @@ body {
     width: 100%;
     margin: 0 auto;
     height: 200px;
-    background: var(--navy);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgba(37,32,138,1) 61%, rgba(0,212,255,1) 100%);
 }
 .hero-geometric {
     width: 100%;
@@ -38,9 +37,6 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background: var(--navy);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgba(37,32,138,1) 61%, rgba(0,212,255,1) 100%);
-    border-bottom: none;
     flex-wrap: wrap;
 }
 header ul {
@@ -67,13 +63,16 @@ header h1 {
 
 /* ----------------------content section ----------------------*/
 
-/* ----------------- h2 style optimization ----------------------*/
+/* ----------------- multiclass style optimization ----------------------*/
 .content-info h2, .work h2, .contact h2{
     flex: 20%;
     padding-right: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.hero, header {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 20%, rgba(37,32,138,1) 61%, rgb(27, 103, 153) 100%);
 }
 
 /* about me section */
